@@ -1,0 +1,21 @@
+{
+  "name": "mhw-mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for Monster Hunter World data access",
+  "main": "dist/mhw-mcp-server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mhw-mcp-server.js",
+    "dev": "tsx mhw-mcp-server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "tsx": "^4.19.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

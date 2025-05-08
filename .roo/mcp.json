@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "mhw-helper": {
+      "command": "npx",
+      "args": ["tsx", "mhw-mcp-server.ts"],
+      "description": "Monster Hunter World Helper MCP Server"
+    }
+  }
+}
