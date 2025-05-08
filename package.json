@@ -1,5 +1,5 @@
 {
-  "name": "mhw-mcp-server",
+  "name": "mcp-mhworld",
   "version": "1.0.0",
   "type": "module",
   "description": "Model Context Protocol (MCP) server for accessing Monster Hunter World game data",
