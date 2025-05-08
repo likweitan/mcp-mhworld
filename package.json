@@ -2,12 +2,23 @@
   "name": "mhw-mcp-server",
   "version": "1.0.0",
   "type": "module",
-  "description": "MCP server for Monster Hunter World data access",
+  "description": "Model Context Protocol (MCP) server for accessing Monster Hunter World game data",
   "main": "dist/mhw-mcp-server.js",
+  "bin": {
+    "mhw-mcp-server": "./dist/mhw-mcp-server.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/mhw-mcp-server.js",
-    "dev": "tsx mhw-mcp-server.ts"
+    "dev": "tsx mhw-mcp-server.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "latest",
@@ -16,6 +27,31 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "rimraf": "^5.0.5",
     "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "mhw",
+    "monster-hunter-world",
+    "mcp",
+    "model-context-protocol",
+    "game-data",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/likweitan/mcp-mhworld"
+  },
+  "author": {
+    "name": "Lik Wei Tan",
+    "email": "likweitan@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/likweitan/mcp-mhworld/issues"
+  },
+  "homepage": "https://github.com/likweitan/mcp-mhworld#readme",
+  "engines": {
+    "node": ">=18"
   }
 }
